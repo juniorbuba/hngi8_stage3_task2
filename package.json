@@ -1,0 +1,22 @@
+{
+  "name": "hngi8_stage3_task2",
+  "version": "1.0.0",
+  "description": "HNGi8 stage 3 task 2 for backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorbuba/hngi8_stage3_task2.git"
+  },
+  "author": "juniorbuba <juniorbuba4real@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juniorbuba/hngi8_stage3_task2/issues"
+  },
+  "homepage": "https://github.com/juniorbuba/hngi8_stage3_task2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
