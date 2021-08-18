@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/juniorbuba/hngi8_stage3_task2#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.3"
   }
 }

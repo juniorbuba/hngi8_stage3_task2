@@ -1,0 +1,18 @@
+#profile{
+    border: 1px solid #000;
+    min-height: 45px;
+    margin-top: 20px;
+}
+#profile-blue-header{
+    width: 100%;
+    margin-top: 15px;
+    height: 65px;
+    background-color: aqua;
+}
+#profile-blue-footer{
+    width: 100%;
+    margin-top: 155px;
+    margin-bottom: 15px;
+    height: 35px;
+    background-color: aqua;
+}
