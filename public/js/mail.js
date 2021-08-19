@@ -9,7 +9,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 
 const sendMail = (mail) => {
     
-    fetch("/send", {
+    fetch("https://powerful-retreat-05454.herokuapp.com/send", {
       method: "post",
       body: mail,
   
