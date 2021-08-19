@@ -9,6 +9,7 @@ const app = express()
 const pathToViews = path.join(__dirname, 'src/assets/views')
 const pathToPublic = path.join(__dirname, 'public/css')
 const pathToJS = path.join(__dirname, 'public/js')
+const pathToImg = path.join(__dirname, 'public/images')
 
 const port = process.env.PORT || 6500
 
@@ -16,10 +17,11 @@ app.set('views', pathToViews)
 app.use(express.static(pathToPublic))
 app.use(express.static(pathToJS))
 app.use(express.static(pathToViews))
+app.use(express.static(pathToImg))
 
 app.get('/', (req, res) => res.sendFile(pathToViews+ '/resume.html'))
 
-app.get('/contact-me', (req, res) => res.sendFile(pathToViews, '/contact.html'))
+app.get('/contact', (req, res) => res.sendFile(pathToViews, '/contact.html'))
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -41,7 +43,6 @@ transporter.verify( (error, success) => {
 
   app.post("/send", (req, res) => {
    
-    console.log('mailsent')
     let form = new multiparty.Form();
     let data = {};
     form.parse(req, function (err, fields) {
