@@ -25,8 +25,7 @@ app.get('/contact', (req, res) => res.sendFile(pathToViews, '/contact.html'))
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 25,
-    secure: false,
+    port: 465,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASS,
