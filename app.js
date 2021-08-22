@@ -10,6 +10,7 @@ const pathToViews = path.join(__dirname, 'src/assets/views')
 const pathToPublic = path.join(__dirname, 'public/css')
 const pathToJS = path.join(__dirname, 'public/js')
 const pathToImg = path.join(__dirname, 'public/images')
+const pathToFonts = path.join(__dirname, 'public/fonts')
 
 const port = process.env.PORT || 6500
 
@@ -18,10 +19,12 @@ app.use(express.static(pathToPublic))
 app.use(express.static(pathToJS))
 app.use(express.static(pathToViews))
 app.use(express.static(pathToImg))
+app.use(express.static(pathToFonts))
 
 app.get('/', (req, res) => res.sendFile(pathToViews+ '/resume.html'))
-
 app.get('/contact', (req, res) => res.sendFile(pathToViews, '/contact.html'))
+app.get('/index', (req, res) => res.sendFile(pathToViews, '/new.html'))
+
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",

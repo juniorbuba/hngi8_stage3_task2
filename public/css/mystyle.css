@@ -1,0 +1,29 @@
+#profile{
+    border: 1px solid #000;
+    min-height: 45px;
+    margin-top: 20px;
+}
+#profile-blue-header{
+    width: 100%;
+    margin-top: 15px;
+    height: 65px;
+    background-color: rgb(15, 26, 119);
+}
+#profile-blue-footer{
+    width: 100%;
+    margin-top: 155px;
+    margin-bottom: 15px;
+    height: 35px;
+    background-color: rgb(15, 26, 119);
+}
+.blue-text{
+    color: #005ca3;
+}
+.space-education{
+    margin: 10px;
+    line-height: 25px;
+    font-weight: bold;
+}
+form{
+    margin: 20px;
+}
