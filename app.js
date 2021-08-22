@@ -21,9 +21,9 @@ app.use(express.static(pathToViews))
 app.use(express.static(pathToImg))
 app.use(express.static(pathToFonts))
 
-app.get('/', (req, res) => res.sendFile(pathToViews+ '/resume.html'))
+app.get('/', (req, res) => res.sendFile(pathToViews, '/index.html'))
+app.get('/resume', (req, res) => res.sendFile(pathToViews+ '/resume.html'))
 app.get('/contact', (req, res) => res.sendFile(pathToViews, '/contact.html'))
-app.get('/index', (req, res) => res.sendFile(pathToViews, '/new.html'))
 
 
 const transporter = nodemailer.createTransport({
